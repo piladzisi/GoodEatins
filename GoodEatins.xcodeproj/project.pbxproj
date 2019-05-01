@@ -12,6 +12,9 @@
 		4F7C1F542279B84F00A6FD81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C1F522279B84F00A6FD81 /* Main.storyboard */; };
 		4F7C1F562279B85000A6FD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C1F552279B85000A6FD81 /* Assets.xcassets */; };
 		4F7C1F592279B85000A6FD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C1F572279B85000A6FD81 /* LaunchScreen.storyboard */; };
+		4F7C1F642279B9AE00A6FD81 /* DataSet .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C1F632279B9AE00A6FD81 /* DataSet .swift */; };
+		4F875993227A1C9D00C5593D /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F875992227A1C9D00C5593D /* FoodCategory.swift */; };
+		4F875995227A24F800C5593D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F875994227A24F800C5593D /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4F7C1F552279B85000A6FD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7C1F582279B85000A6FD81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F7C1F5A2279B85000A6FD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7C1F632279B9AE00A6FD81 /* DataSet .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSet .swift"; sourceTree = "<group>"; };
+		4F875992227A1C9D00C5593D /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		4F875994227A24F800C5593D /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		4F7C1F4D2279B84F00A6FD81 /* GoodEatins */ = {
 			isa = PBXGroup;
 			children = (
+				4F7C1F612279B96F00A6FD81 /* Model */,
+				4F7C1F602279B96700A6FD81 /* View */,
+				4F7C1F622279B97400A6FD81 /* Controller */,
 				4F7C1F4E2279B84F00A6FD81 /* AppDelegate.swift */,
-				4F7C1F502279B84F00A6FD81 /* ViewController.swift */,
 				4F7C1F522279B84F00A6FD81 /* Main.storyboard */,
 				4F7C1F552279B85000A6FD81 /* Assets.xcassets */,
 				4F7C1F572279B85000A6FD81 /* LaunchScreen.storyboard */,
 				4F7C1F5A2279B85000A6FD81 /* Info.plist */,
 			);
 			path = GoodEatins;
+			sourceTree = "<group>";
+		};
+		4F7C1F602279B96700A6FD81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F7C1F612279B96F00A6FD81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C1F632279B9AE00A6FD81 /* DataSet .swift */,
+				4F875992227A1C9D00C5593D /* FoodCategory.swift */,
+				4F875994227A24F800C5593D /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F7C1F622279B97400A6FD81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C1F502279B84F00A6FD81 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7C1F642279B9AE00A6FD81 /* DataSet .swift in Sources */,
 				4F7C1F512279B84F00A6FD81 /* ViewController.swift in Sources */,
 				4F7C1F4F2279B84F00A6FD81 /* AppDelegate.swift in Sources */,
+				4F875993227A1C9D00C5593D /* FoodCategory.swift in Sources */,
+				4F875995227A24F800C5593D /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
