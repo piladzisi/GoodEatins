@@ -17,6 +17,8 @@
 		4F875995227A24F800C5593D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F875994227A24F800C5593D /* Recipe.swift */; };
 		4FCB4D10227AE3BD0083A8B4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB4D0F227AE3BC0083A8B4 /* CategoryCell.swift */; };
 		4FCB4D12227AF05F0083A8B4 /* RecipesSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB4D11227AF05F0083A8B4 /* RecipesSelectionViewController.swift */; };
+		4FCB4D14227B16AC0083A8B4 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB4D13227B16AC0083A8B4 /* RecipeCell.swift */; };
+		4FCB4D16227B23640083A8B4 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB4D15227B23640083A8B4 /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4F875994227A24F800C5593D /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4FCB4D0F227AE3BC0083A8B4 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4FCB4D11227AF05F0083A8B4 /* RecipesSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionViewController.swift; sourceTree = "<group>"; };
+		4FCB4D13227B16AC0083A8B4 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		4FCB4D15227B23640083A8B4 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4FCB4D0F227AE3BC0083A8B4 /* CategoryCell.swift */,
+				4FCB4D13227B16AC0083A8B4 /* RecipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				4F7C1F502279B84F00A6FD81 /* HomeViewController.swift */,
 				4FCB4D11227AF05F0083A8B4 /* RecipesSelectionViewController.swift */,
+				4FCB4D15227B23640083A8B4 /* RecipeDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,8 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCB4D12227AF05F0083A8B4 /* RecipesSelectionViewController.swift in Sources */,
+				4FCB4D16227B23640083A8B4 /* RecipeDetailViewController.swift in Sources */,
 				4F7C1F642279B9AE00A6FD81 /* DataSet .swift in Sources */,
 				4F7C1F512279B84F00A6FD81 /* HomeViewController.swift in Sources */,
+				4FCB4D14227B16AC0083A8B4 /* RecipeCell.swift in Sources */,
 				4F7C1F4F2279B84F00A6FD81 /* AppDelegate.swift in Sources */,
 				4F875993227A1C9D00C5593D /* FoodCategory.swift in Sources */,
 				4F875995227A24F800C5593D /* Recipe.swift in Sources */,

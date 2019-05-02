@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     let data = DataSet()
-    var categoryToPass: String!
+    var categoryToPass: String?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,9 +26,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
-            cell.configureCell(category: data.categories[indexPath.row])
-            return cell
+        if let categoryCell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.reuseIdentifier, for: indexPath) as? CategoryCell {
+            categoryCell.configureCell(category: data.categories[indexPath.row])
+            return categoryCell
         }
         return UITableViewCell()
     }

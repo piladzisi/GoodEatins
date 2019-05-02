@@ -9,7 +9,8 @@
 import UIKit
 
 class CategoryCell: UITableViewCell {
-
+    static let reuseIdentifier = "categoryCell"
+    
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     
