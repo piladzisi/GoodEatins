@@ -145,9 +145,44 @@
                     <view key="view" contentMode="scaleToFill" id="XeQ-Hf-2Q5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandwich5" translatesAutoresizingMaskIntoConstraints="NO" id="wib-m5-hlj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="Bty-4s-TSO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feta Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo9-Yg-gDF">
+                                <rect key="frame" x="134" y="348" width="146.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNt-OX-TdR">
+                                <rect key="frame" x="20" y="395" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H7E-Yc-vcI" firstAttribute="trailing" secondItem="XNt-OX-TdR" secondAttribute="trailing" constant="20" id="2Ym-0G-7Q0"/>
+                            <constraint firstItem="XNt-OX-TdR" firstAttribute="leading" secondItem="H7E-Yc-vcI" secondAttribute="leading" constant="20" id="NVh-ny-zCs"/>
+                            <constraint firstItem="wib-m5-hlj" firstAttribute="top" secondItem="H7E-Yc-vcI" secondAttribute="top" id="ZUf-r1-E2T"/>
+                            <constraint firstItem="XNt-OX-TdR" firstAttribute="top" secondItem="fo9-Yg-gDF" secondAttribute="bottom" constant="18" id="bcN-0b-at8"/>
+                            <constraint firstItem="H7E-Yc-vcI" firstAttribute="trailing" secondItem="wib-m5-hlj" secondAttribute="trailing" id="mST-BB-WWH"/>
+                            <constraint firstItem="fo9-Yg-gDF" firstAttribute="top" secondItem="wib-m5-hlj" secondAttribute="bottom" constant="35" id="oWN-Hg-ltY"/>
+                            <constraint firstItem="fo9-Yg-gDF" firstAttribute="centerX" secondItem="XeQ-Hf-2Q5" secondAttribute="centerX" id="ueU-mK-ucP"/>
+                            <constraint firstItem="wib-m5-hlj" firstAttribute="leading" secondItem="H7E-Yc-vcI" secondAttribute="leading" id="yXy-Xi-9D6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H7E-Yc-vcI"/>
                     </view>
+                    <connections>
+                        <outlet property="recipeDetails" destination="XNt-OX-TdR" id="WOh-cw-8bV"/>
+                        <outlet property="recipeImage" destination="wib-m5-hlj" id="Igd-AM-kgn"/>
+                        <outlet property="recipeTitle" destination="fo9-Yg-gDF" id="uTo-mI-Ev7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96U-T8-EfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,5 +210,6 @@
     <resources>
         <image name="burger0" width="1052" height="699"/>
         <image name="burger6" width="966" height="725"/>
+        <image name="sandwich5" width="1189" height="669"/>
     </resources>
 </document>
